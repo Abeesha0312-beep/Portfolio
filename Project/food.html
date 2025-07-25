@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Details</title>
+  <link rel="stylesheet" href="food.css">
+  <style>
+    @media (max-width: 992px) {
+      .heading1 {
+        display: block;
+        width: 100%;
+        margin: 10px auto;
+        text-align: center;
+      }
+      .social-accounts {
+        float: none;
+        display: flex;
+        justify-content: center;
+        margin: 20px 0;
+      }
+      nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0;
+      }
+      nav li {
+        margin: 10px;
+        display: block;
+      }
+      .container {
+        height: auto;
+        flex-direction: column;
+        text-align: center;
+        padding: 20px 10px;
+      }
+      .content {
+        position: relative;
+        margin-top: 20px;
+      }
+      .content h1 {
+        font-size: 28px;
+      }
+      .content hr {
+        width: 150px;
+        border-width: 2px;
+      }
+      .service-container {
+        gap: 20px;
+      }
+      .content-service {
+        width: 100%;
+        max-width: 350px;
+      }
+      .footer-content {
+        flex-direction: column;
+        gap: 10px;
+      }
+      .links {
+        margin-left: 0;
+      }
+      .subscribe {
+        flex-direction: column;
+        padding: 10px;
+      }
+      .subscribe input[type="email"] {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="head">
+    <header>
+      <div class="logo">
+        <img src="images/logo.png" alt="image" width="100px" height="90px" class="image">
+      </div>
+      <div class="heading1">
+        <p>Discover the Charm of Hyderabad,Sindh <br>Tourism, Sports, Culture, Cuisines & Museums Department</p>
+      </div>
+      <div class="social-accounts">
+        <p>
+          <img src="images/whatsapp.png" width="30px">
+          <img src="images/instagram.png" width="30px">
+          <img src="images/twitter.png" width="30px">
+          <img src="images/facebook.png" width="30px">
+        </p>
+      </div>
+    </header>
+    <nav>
+      <ul>
+        <div class="navigations">
+          <li class="home"><a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="tours.html">TOURS</a></li>
+          <li><a href="monuments.html">MONUMENTS</a></li>
+          <li><a href="shopping.html">SHOPPING</a></li>
+          <li><a href="food.html">FOOD</a></li>
+          <li><a href="travel.html">TRAVEL</a></li>
+          <li><a href="resort.html">RESORTS</a></li>
+          <li><a href="restaurant.html">RESTAURANTS</a></li>
+          <li><a href="activities.html">ACTIVITIES</a></li>
+          <li><a href="gallery.html">GALLERY</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </div>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="container">
+    <div class="background"></div>
+    <div class="content">
+      <h1>Famous Restaurants and Food Spots</h1>
+      <hr>
+    </div>
+  </div>
+
+  <section class="services">
+    <div class="service-content">
+      <div class="service-container">
+        <div class="content-service">
+          <img src="images/sindhi-biryani.png">
+          <h3>Hyderabadi Biryani</h3>
+        </div>
+        <div class="content-service">
+          <img src="images/bun kebab.jpeg">
+          <h3>Bun Kabab</h3>
+        </div>
+        <div class="content-service">
+          <img src="images/nihari.jpeg">
+          <h3>Nihari</h3>
+        </div>
+        <div class="content-service">
+          <img src="images/kabab.jpeg">
+          <h3>Seekh Kebab</h3>
+        </div>
+        <div class="content-service">
+          <img src="images/haleem.jpeg">
+          <h3>Haleem</h3>
+        </div>
+        <div class="content-service">
+          <img src="images/shahi.jpeg">
+          <h3>Shahi Tukra</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="subscribe">
+      <input type="email" placeholder="Enter your email to get new updates">
+      <button>Subscribe</button>
+    </div>
+    <div class="footer-content">
+      <div class="logo">
+        <img src="images/logo.png" width="150">
+      </div>
+      <div class="links">
+        <a href="#">Privacy Policy</a> |
+        <a href="#">Terms & Conditions</a> |
+        <a href="#">Contact Us</a>
+      </div>
+      <div class="social-accounts">
+        <p>
+          <img src="images/whatsapp.png" width="30px">
+          <img src="images/instagram.png" width="30px">
+          <img src="images/twitter.png" width="30px">
+          <img src="images/facebook.png" width="30px">
+        </p>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>&copy; 2025 Tourist Attraction Website | All Rights Reserved</p>
+    </div>
+  </footer>
+</body>
+</html>

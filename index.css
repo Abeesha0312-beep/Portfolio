@@ -401,3 +401,20 @@ font-size: 1.2rem;
 .contact-form button:hover {
   background: #643bd8;
 }
+.project-img {
+  height: 220px;
+  object-fit: cover;
+}
+.project-img {
+  height: 220px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.img-wrapper:hover .project-img {
+  transform: scale(1.05);
+}
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}

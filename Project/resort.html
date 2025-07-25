@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resort Details</title>
+  <link rel="stylesheet" href="resort.css">
+  <style>
+    header {
+      background-color: #f5f5f5;
+    }
+    .logo {
+      display: inline-block;
+    }
+    .image {
+      margin-bottom: 0;
+      margin-left: 50px;
+      padding: 0 15px;
+      margin-top: 20px;
+    }
+    .heading1 {
+      font-size: 16px;
+      font-weight: 400;
+      font-family: "Poppins", sans-serif;
+      display: inline-block;
+      width: 500px;
+      margin-left: 250px;
+      text-align: center;
+      line-height: 26px;
+      margin-right: 15px;
+      margin-top: 16px;
+    }
+    .social-accounts {
+      display: inline-block;
+      margin-left: 50px;
+      padding: 0 15px;
+      margin-top: 50px;
+      float: right;
+    }
+    .social-accounts img {
+      margin-left: 5px;
+    }
+    nav {
+      display: inline-block;
+      width: 100%;
+    }
+    nav li {
+      display: inline-block;
+      margin-right: 20px;
+    }
+    nav a {
+      font-size: 1.1em;
+      color: black;
+      text-decoration: none;
+    }
+    nav a:hover {
+      color: gray;
+      transition: color 0.15s;
+    }
+    .navigations {
+      text-align: center;
+    }
+    .home {
+      border-bottom: 2px solid green;
+    }
+    .container {
+      position: relative;
+      width: 100%;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    .background {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: url('images/background-image.jpg') no-repeat center center/cover;
+      filter: brightness(0.5);
+    }
+    .content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .content h1 {
+      font-size: 60px;
+      font-weight: bold;
+      color: white;
+    }
+    .content hr {
+      width: 100px;
+      border: 2px solid #c2a93d;
+    }
+    .resort h1 {
+      text-align: center;
+      color: #333;
+      font-weight: 400;
+      font-size: 36px;
+      padding: 20px 10px;
+      line-height: 1.4;
+    }
+    .resort-heading {
+      display: inline-block;
+      border-bottom: 3px solid #c2a93d;
+      padding-bottom: 6px;
+    }
+    section {
+      margin-top: 20px;
+      font-family: "Poppins", sans-serif;
+      text-align: center;
+    }
+    .main-box {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      margin-bottom: 50px;
+    }
+    .box {
+      background-size: cover;
+      border-radius: 15px;
+      height: 150px;
+      width: 300px;
+      padding: 50px 30px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .box:hover {
+      transform: scale(1.05);
+      transition: transform 0.15s;
+    }
+    .box h3 {
+      color: aliceblue;
+      font-size: 20px;
+    }
+    .box-content {
+      margin-top: 90px;
+      text-align: left;
+    }
+    .btn {
+      font-size: 1em;
+      padding: 10px 20px;
+      margin-top: 10px;
+      background-color: #e57100;
+      color: white;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    footer {
+      padding: 20px 0;
+      text-align: center;
+      box-shadow: 4px 1px 7px rgba(0, 0, 0, 0.1);
+      margin-top: 20px;
+    }
+    .subscribe {
+      background-color: aliceblue;
+      color: #333;
+      margin: 20px auto;
+      max-width: 450px;
+      display: flex;
+      justify-content: center;
+      gap: 5px;
+    }
+    .subscribe input[type="email"] {
+      padding: 10px;
+      width: 80%;
+      border: 1px solid #28a745;
+      border-radius: 2px;
+    }
+    .subscribe button {
+      padding: 10px;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      border-radius: 2px;
+      cursor: pointer;
+    }
+    .footer-content {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin: 20px 0;
+      flex-wrap: wrap;
+    }
+    .logo img {
+      max-width: 100px;
+    }
+    .links {
+      margin-left: 100px;
+    }
+    .links a {
+      margin: 0 5px;
+      color: black;
+      text-decoration: none;
+    }
+    .links a:hover {
+      text-decoration: underline;
+    }
+    .copyright {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      margin-top: 20px;
+    }
+
+    @media (max-width: 768px) {
+      .heading1,
+      .social-accounts {
+        display: block;
+        text-align: center;
+        float: none;
+      }
+      .heading1 {
+        width: 90%;
+        margin: 10px auto;
+      }
+      .social-accounts {
+        margin: 10px auto;
+      }
+      nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0;
+      }
+      nav li {
+        display: block;
+        margin: 10px;
+      }
+      .container {
+        height: auto;
+        flex-direction: column;
+        padding: 20px 10px;
+      }
+      .content h1 {
+        font-size: 36px;
+      }
+      .resort h1 {
+        font-size: 24px;
+        padding: 20px 10px;
+      }
+      .box {
+        width: 90%;
+        height: 200px;
+        padding: 20px;
+        margin: auto;
+      }
+      .box-content {
+        margin-top: 100px;
+        text-align: center;
+      }
+      .footer-content {
+        flex-direction: column;
+        gap: 10px;
+      }
+      .subscribe {
+        flex-direction: column;
+        padding: 10px;
+      }
+      .subscribe input[type="email"] {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+    <div class="head">
+        <header>
+            <div class="logo">
+            <img src="images/logo.png" alt="image" width="100px"; height="90px"; class="image" >
+            </div>
+            <div class="heading1">
+                <p>Discover the Charm of Hyderabad,Sindh <br>Tourism, Sports, Culture, Cuisines & Museums Department</p>
+            </div>
+            <div class="social-accounts">
+                <p><img src="images/whatsapp.png" width="30px">
+                    <img src="images/instagram.png" width="30px">
+                    <img src="images/twitter.png" width="30px">
+                    <img src="images/facebook.png" width="30px">
+                </p>
+            </div>
+        </header>
+        <nav><ul>
+        <div class="navigations">
+            <li class="home"><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li> 
+            <li><a href="tours.html">TOURS</a></li>
+            <li><a href="monuments.html">MONUMENTS</a></li>
+            <li><a href="shopping.html">SHOPPING</a></li>
+            <li><a href="food.html">FOOD</a></li>
+            <li><a href="travel.html">TRAVEL</a></li>
+            <li><a href="resort.html">RESORTS</a></li>
+            <li><a href="restaurant.html">RESTAURANTS</a></li> 
+            <li><a href="activities.html">ACTIVITIES</a></li>
+            <li><a href="gallery.html">GALLERY</a></li>
+            <li><a href="contact.html">CONTACT</a></li> </div>
+    </ul></nav> </div>
+
+        <div class="container">
+            <div class="background"></div>
+            <div class="content">
+                <h1>Resorts</h1>
+                <hr>
+            </div>
+        </div>
+        <div class="resort">
+            <h1>Begin Your New Life Experience With Choosing our Resorts</h1>
+        </div>
+        <section>
+        <div class="main-box">
+            <div class="box" style="background: url('images/indus.webp') no-repeat center center/cover;">
+                <div class="box-content">
+                <h3>Indus Hotel Hyderabad</h3>
+                <button class="btn">Book Now</button>
+            </div>
+        </div>
+        <div class="box"style="background: url('images/cottage.jpeg') no-repeat center center/cover;">
+            <div class="box-content">
+            <h3>Real Cottage Guest House</h3>
+            <button class="btn">Book Now</button>
+        </div>
+    </div>
+    <div class="box"style="background: url('images/cape-town.webp') no-repeat center center/cover;">
+        <div class="box-content">
+        <h3>Cape Town Guest House</h3>
+        <button class="btn">Book Now</button>
+    </div>
+</div>
+<div class="box"style="background: url('images/Hotel Paradise Lounge.jpeg') no-repeat center center/cover;">
+    <div class="box-content">
+    <h3>Hotel Paradise Lounge</h3>
+    <button class="btn">Book Now</button>
+</div>
+</div>
+<div class="box"style="background: url('images/crown-hotel.jpeg') no-repeat center center/cover;">
+    <div class="box-content">
+    <h3>Hotel Crown Hyderabad</h3>
+    <button class="btn">Book Now</button>
+</div>
+</div>
+<div class="box"style="background: url('images/royal-palace.jpg') no-repeat center center/cover;">
+    <div class="box-content">
+    <h3>The Royal Palace Guest House</h3>
+    <button class="btn">Book Now</button>
+</div>
+</div>
+        </div>
+    </section>
+
+
+        <footer>
+            <div class="subscribe">
+                <input type="email" placeholder="Enter your email to get new updates">
+                <button>Subscribe</button>
+            </div>
+            <div class="footer-content">
+                <div class="logo">
+                    <img src="images/logo.png"width="150">
+                </div>
+                <div class="links">
+                    <a href="#">Privacy Policy</a> |
+                    <a href="#">Terms & Conditions</a> |
+                    <a href="#">Contact Us</a>
+                </div>
+                <div class="social-accounts">
+                    <p><img src="images/whatsapp.png" width="30px">
+                        <img src="images/instagram.png" width="30px">
+                        <img src="images/twitter.png" width="30px">
+                        <img src="images/facebook.png" width="30px">
+                    </p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Tourist Attraction Website | All Rights Reserved</p>
+            </div>
+        </footer>
+
+    
+</body>
+</html>
