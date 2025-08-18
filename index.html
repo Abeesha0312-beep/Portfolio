@@ -66,9 +66,11 @@
     <div class="col-md-8">
       <h1>Hello</h1>
       <h2 class="fw-bold">I’m Abeesha Azeem</h2>
-      <p class="text-muted">Graphic designer and Web Developer</p>
+      <p class="text-muted">Frontend Developer & Graphic Designer</p>
       <p>
-        I'm an aspiring Graphic Designer and Web Developer with a strong interest in creating visually appealing, user-friendly digital designs. I specialize in tools like HTML, CSS, Bootstrap, Canva, Photopea, and Adobe Suite. My goal is to contribute my creative skills to real-world projects while continuing to grow as a designer and developer.
+       I transform ideas into stunning, user-friendly digital experiences. From interactive websites to bold logos and creative visuals, I leverage Adobe Illustrator, HTML, CSS, Bootstrap, Canva, Photopea, and Adobe Suite to craft designs that look amazing and work seamlessly.
+<br> 
+Passionate about bringing creativity to real-world projects, I’m constantly sharpening my skills to make every design impactful and memorable.
       </p>
       <span id="element"></span>
     </div>
@@ -175,7 +177,7 @@
 <section id="posters" class="py-5" style="background: linear-gradient(to right, #f5f5f5, #f7f0f8);">
   <div class="container">
     <h2 class="text-center mb-4 fw-bold">Posters</h2>
-    <p class="text-center text-muted mb-5">Creative poster designs made using Canva and Adobe Illustrator</p>
+    <p class="text-center text-muted mb-5">Creative poster designs made using Adobe Illustrator & Canva </p>
 
     <div id="posterCarousel" class="carousel slide position-relative" data-bs-ride="carousel">
       <div class="carousel-inner">
@@ -305,7 +307,7 @@
 
     <div class="position-relative">
       <!-- Carousel -->
-      <div id="gamingCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div id="gamingCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
         <div class="carousel-inner">
           <div class="carousel-item active">
             <div class="row g-3">
@@ -427,6 +429,61 @@
     </div>
   </div>
 </section>
+
+<section id="web-projects" class="web-projects-section py-5">
+  <div class="container">
+    <h2 class="section-title">ShopSphere</h2>
+    <p class="section-desc">
+      A sleek, single-page e-commerce site featuring product listings, shopping cart, and responsive design. Switches between light and dark modes automatically.
+    </p>
+
+    <div class="position-relative">
+      <!-- Carousel -->
+      <div id="shopSphereCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+        <div class="carousel-inner">
+          <!-- Light Mode Screenshot -->
+          <div class="carousel-item active">
+            <div class="row g-3 justify-content-center">
+              <div class="col-md-6">
+                <img src="Images/shopsphere-light.jpeg" class="d-block w-100 rounded project-img" alt="ShopSphere Light Mode">
+                <p class="text-center mt-2">Light Mode</p>
+              </div>
+            </div>
+          </div>
+          <!-- Dark Mode Screenshot -->
+          <div class="carousel-item">
+            <div class="row g-3 justify-content-center">
+              <div class="col-md-6">
+                <img src="Images/shopsphere-dark.jpeg" class="d-block w-100 rounded project-img" alt="ShopSphere Dark Mode">
+                <p class="text-center mt-2">Dark Mode</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Arrows -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#shopSphereCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bg-dark rounded-circle p-3"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#shopSphereCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon bg-dark rounded-circle p-3"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="text-center mt-2">
+      <a href="https://abeesha0312-beep.github.io/ShopSphere/" target="_blank" class="btn btn-primary px-4 py-2 rounded-pill">
+        View Full Project
+      </a>
+    </div>
+  </div>
+</section>
+
+
+
+
 <section id="resume" class="py-5 bg-dark text-white">
   <div class="container">
     <h2 class="section-title text-center">My Resume</h2>
@@ -467,7 +524,7 @@
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
      <script>
     var typed = new Typed('#element', {
-      strings: [' This portfolio showcases some of my best work.'],
+      strings: [' Dive into my portfolio to see my best work! ✨'],
       typeSpeed: 50,
     });
   </script>
