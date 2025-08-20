@@ -443,3 +443,53 @@ font-size: 1.2rem;
   margin-top: 30px !important;
 }
 
+/* Contact Buttons Container */
+.contact-buttons {
+  margin-top: 20px;
+}
+
+/* Common Button Styles */
+.contact-btn {
+  display: inline-block;
+  padding: 12px 20px;
+  margin: 8px 10px 0 0;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+/* Email | LinkedIn */
+.connection{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.connect{
+  margin-right: 60px;
+  
+}
+.connect i{
+  margin-top: 20px;
+  margin-right: 7px;
+  font-size: 19px;
+  color:#EA4335;
+}
+.connect a{
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+
+.linkedin a{
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+.linkedin i{
+  margin-top: 20px;
+  font-size:20px ;
+  margin-right: 6px;
+  color: blue;
+}
